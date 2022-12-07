@@ -37,24 +37,3 @@ $router->group(['prefix' => 'matakuliah'], function () use ($router) {
 });
 
 $router->get('/matakuliah', ['uses' => 'MahasiswaController@allMatakuliah']);
-
-
-// $router->group(['prefix' => 'mahasiswas'], function () use ($router) {
-//     $router->post('/', ['uses' => 'MahasiswaController@createMahasiswa']);
-//     $router->get('/{id}', ['uses' => 'PostController@getPostById']);
-//     $router->put('/{id}/tag/{tagId}', ['uses' => 'PostController@getPostById']); //
-// });
-
-// $router->get('/', ['middleware' => 'jwt.auth', 'uses' => 'HomeController@home']);
-
-// $router->group(['prefix' => 'auth'], function () use ($router) {
-//     $router->post('/register', ['uses' => 'AuthController@register']);
-//     $router->post('/login', ['uses' => 'AuthController@login']);
-// });
-
-// $router->group(['prefix' => 'mahasiswa'], function () use ($router) {
-//     $router->get('/', ['uses' => 'MahasiswaController@allmhs']);
-//     $router->get('/profile', ['middleware' => 'jwt.auth', 'uses' => 'MahasiswaController@profile']);
-//     $router->get('/{nim}', ['uses' => 'MahasiswaController@nimprofile']);
-//     $router->post('/{nim}/matakuliah/{mkId}', ['uses' => 'MahasiswaController@addmatkul']);
-// });

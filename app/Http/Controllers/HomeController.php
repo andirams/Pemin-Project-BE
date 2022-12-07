@@ -18,15 +18,4 @@ class HomeController extends Controller
             'message' => 'selamat datang ' . $mahasiswa->nama,
         ], 200);
     }
-
-    // public function profile(Request $request)
-    // {
-    //     $mahasiswa = $request->mahasiswa;
-
-    //     return response()->json([
-    //         'status' => 'Success',
-    //         'message' => 'selamat datang ' . $mahasiswa->nama,
-    //         'mahasiswa' => $mahasiswa,
-    //     ], 200);
-    // }
 }
